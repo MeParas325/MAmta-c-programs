@@ -39,7 +39,7 @@ int main(){
     a = ((assesment*(20))/100);
     p = ((project*(25))/50);
 
-    cgpa = (a+e+q+p)/9.5;
+    cgpa = (a+e+q+p)/10;
 
     printf("CGPA is:%0.2f", cgpa);
 
