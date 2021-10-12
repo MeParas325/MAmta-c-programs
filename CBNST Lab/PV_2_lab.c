@@ -1,21 +1,17 @@
 #include<stdio.h>
 
 int main(){
+    int s, sec, min, hr;
+    printf("Enter value in seconds: ");
+    scanf("%d", &s);
 
-    int n,temp;
-    int hrs;
-
-    printf("Enter the value in seconds:");
-    scanf("%d", &n);
-
-    temp = n;
-
-    while(temp>=3600){
-        temp = temp%60;
-        hrs++; 
+    sec = s%60;
+    min = s/60;
+    if(min >= 60){
+        min = min % 60;
     }
+    hr = s/3600;
 
-    printf("%d %d", hrs,temp);
-
-
+    printf("%d hr: %d min: %d sec", hr, min, sec);
+    return 0;
 }
